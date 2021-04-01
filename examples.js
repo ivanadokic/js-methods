@@ -68,3 +68,15 @@ console.log(result);
   [10, 20, 30, 40].filter(function(e, index) {
     return index % 2 === 0;
   }) //=> [10, 30] (elements with an even-numbered index)
+
+const myArray = [
+  { id: 1, name: "Mark" },
+  { id: 2, name: "Sam" },
+  { id: 3, name: "Sandy" },
+  { id: 4, name: "Mark" },
+]
+
+myArray.filter(element => element.name === "Mark")
+//-------> Output : 0:{id: 1, name: "Mark"},
+//                  1:{id: 4, name: "Mark"}
+
