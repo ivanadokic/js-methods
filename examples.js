@@ -13,3 +13,14 @@ const map1 = array1.map(x => x * 2);
 
 console.log(map1);
 //-------> Output: [2, 8, 18, 32]
+
+[10, 20, 30, 40].map(function(a) {
+  return a * 2;
+}); 
+//-------> Output: [20, 40, 60, 80]
+
+const arr = [1, 2, 3, 4];
+
+const newArray = arr.map(element => {
+  return element * 2;
+});
