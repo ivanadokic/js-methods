@@ -24,3 +24,9 @@ const arr = [1, 2, 3, 4];
 const newArray = arr.map(element => {
   return element * 2;
 });
+
+const newArrayOneLiner = arr.map(element => element * 2);
+
+console.log(arr); // [1, 2, 3, 4]
+console.log(newArray); // [2, 4, 6, 8]
+console.log(newArrayOneLiner); // [2, 4, 6, 8]
