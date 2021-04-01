@@ -45,3 +45,26 @@ function myFunc(total, num) {
   return total - num;
 }
 //=> 50
+
+## Use `.filter()` to filter an Array
+
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+//-------> Output: Array ["exuberant", "destruction", "present"]
+
+//-------> Output: ["exuberant", "destruction", "present"]
+
+[10, 20, 30, 40].filter(function() {
+    return true;
+  }) //=> [10, 20, 30, 40] (map, basically)
+ 
+  [10, 20, 30, 40].filter(function(e) {
+    return e < 30;
+  }) //=> [10, 20]
+ 
+  [10, 20, 30, 40].filter(function(e, index) {
+    return index % 2 === 0;
+  }) //=> [10, 30] (elements with an even-numbered index)
