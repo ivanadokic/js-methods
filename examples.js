@@ -30,3 +30,18 @@ const newArrayOneLiner = arr.map(element => element * 2);
 console.log(arr); // [1, 2, 3, 4]
 console.log(newArray); // [2, 4, 6, 8]
 console.log(newArrayOneLiner); // [2, 4, 6, 8]
+## Use `.reduce()` to reduce an Array to a value
+
+[10, 20, 30, 40].reduce(function(memo, i) { return memo + i }) //=> 100
+[10, 20, 30, 40].reduce(function(memo, i) { return memo + i }, 100) //=> 200
+
+//=>Subtract the numbers in the array, starting from the beginning:
+
+var numbers = [125, 20, 25, 30];
+
+document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
+
+function myFunc(total, num) {
+  return total - num;
+}
+//=> 50
