@@ -80,3 +80,13 @@ myArray.filter(element => element.name === "Mark")
 //-------> Output : 0:{id: 1, name: "Mark"},
 //                  1:{id: 4, name: "Mark"}
 
+
+Subtract the numbers in the array, starting from the beginning:
+var numbers = [125, 20, 25, 30];
+
+document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
+
+function myFunc(total, num) {
+  return total - num;
+}
+//=> 50
