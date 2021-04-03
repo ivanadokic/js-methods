@@ -90,3 +90,6 @@ function myFunc(total, num) {
   return total - num;
 }
 //=> 50
+// .reduce()
+[10, 20, 30, 40].reduce(function(memo, i) { return memo + i }) //=> 100
+[10, 20, 30, 40].reduce(function(memo, i) { return memo + i }, 100) //=> 200
