@@ -93,3 +93,32 @@ function myFunc(total, num) {
 // .reduce()
 [10, 20, 30, 40].reduce(function(memo, i) { return memo + i }) //=> 100
 [10, 20, 30, 40].reduce(function(memo, i) { return memo + i }, 100) //=> 200
+
+
+let students = [
+    {
+        firstName: 'Johnny',
+        lastName: 'Lee',
+        age: 20,
+    },
+
+    {
+        firstName: 'Anna',
+        lastName: 'Zax',
+        age: 19,
+
+    },
+
+    {
+        firstName: 'Zion',
+        lastName: 'Sanches',
+        age: 22,
+
+    }
+];
+
+//sorts the students array by ages in ascending order:
+students.sort((a, b) => {
+    return a.age - b.age;
+}); 
+
