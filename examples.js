@@ -125,3 +125,11 @@ studetns.forEach((e) => {
     console.log(`${e.firstName} ${e.lastName} ${e.age}`);
 });
 
+students.sort((a, b) => b.age - a.age);
+
+
+//sort the students by ages in descending order:
+
+students.forEach((e) => {
+    console.log(`${e.firstName} ${e.lastName} ${e.age}`);
+});
