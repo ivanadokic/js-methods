@@ -121,4 +121,7 @@ let students = [
 students.sort((a, b) => {
     return a.age - b.age;
 }); 
+studetns.forEach((e) => {
+    console.log(`${e.firstName} ${e.lastName} ${e.age}`);
+});
 
